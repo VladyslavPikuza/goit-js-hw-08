@@ -84,18 +84,6 @@ galleryContainer.insertAdjacentHTML('beforeend', galleryMarkup);
 
 galleryContainer.addEventListener('click', onGalleryItemClick);
 
-function onGalleryItemClick(event) {
-  event.preventDefault();
-
-  const isGalleryImage = event.target.classList.contains('gallery-image');
-  if (!isGalleryImage) return;
-
-  const largeImageURL = event.target.dataset.source;
-  console.log('Large image URL:', largeImageURL);
-}
-
-
-galleryContainer.addEventListener('click', onGalleryItemClick);
 
 function onGalleryItemClick(event) {
   event.preventDefault();
